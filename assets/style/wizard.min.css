@@ -1,0 +1,35 @@
+.wizard-steps {
+  @apply flex justify-between;
+}
+.wizard-steps .step {
+  @apply text-center relative text-xs flex-1 mx-auto;
+}
+.wizard-steps .step:not(:first-child):before {
+  @apply absolute h-2 w-1/2 bg-grey-30;
+  content: "";
+  left: 0;
+  top: 18px;
+}
+.wizard-steps .step:not(:last-child):after {
+  @apply absolute h-2 w-1/2 bg-grey-30;
+  content: "";
+  left: 50%;
+  top: 18px;
+}
+.wizard-steps .step.complete:before,
+.wizard-steps .step.complete:after {
+  @apply bg-blue;
+}
+.wizard-steps .ball {
+  @apply h-10 w-10 bg-grey-30 text-grey text-base rounded-full text-center z-10 mx-auto relative;
+  line-height: 40px;
+}
+.wizard-steps .label {
+  @apply text-xs mt-sm text-grey;
+}
+.wizard-steps .complete .ball {
+  @apply bg-blue text-white;
+}
+.wizard-steps .complete .label {
+  @apply text-blue;
+}/*# sourceMappingURL=wizard.min.css.map */

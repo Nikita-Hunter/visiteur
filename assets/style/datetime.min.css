@@ -1,0 +1,94 @@
+/* ==========================================================================
+   DATE & TIME FIELDTYPES
+   ========================================================================== */
+.daterange {
+  outline: none;
+  width: 100%;
+}
+.daterange .icon-remove {
+  right: 32px;
+}
+.daterange .dr-calendar {
+  max-width: 250px;
+}
+.daterange .dr-active, .daterange .dr-input {
+  z-index: 1;
+}
+
+.datetime .icon-remove, .time-fieldtype .icon-remove {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.1);
+  font-size: 15px;
+  line-height: 1;
+  padding: 0px 4px 2px;
+  border-radius: 50%;
+  color: #777;
+  height: 18px;
+  width: 18px;
+  margin-right: 8px;
+  text-shadow: 0 1px 1px #FFF;
+}
+
+.daterange--single .dr-input .dr-dates {
+  min-width: 60px;
+}
+
+.date-time-container {
+  @apply flex;
+}
+.date-time-container .time-container {
+  @apply ml-1;
+}
+
+.date-time-container.narrow {
+  @apply block;
+}
+.date-time-container.narrow .time-container {
+  @apply mt-1 ml-0;
+}
+
+.date-time-container .date-container > span > .vc-popover-content-wrapper {
+  left: -50px !important;
+}
+
+/* Time Field
+  ========================================================================== */
+.time-fieldtype .time-fieldtype-container {
+  @apply flex items-center;
+  min-width: max-content;
+  max-width: 140px;
+}
+.time-fieldtype .input-time {
+  @apply inline-block text-center bg-transparent;
+  -moz-appearance: textfield;
+  width: 26px;
+}
+.time-fieldtype .input-time:active, .time-fieldtype .input-time:focus {
+  outline: none;
+}
+.time-fieldtype .colon {
+  @apply select-none;
+  margin: 0 -2px;
+}
+.time-fieldtype input::-webkit-inner-spin-button,
+.time-fieldtype input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Inside a Grid field
+  ========================================================================== */
+.grid-mode-table .date-fieldtype .daterange .icon {
+  top: 8px;
+}
+.grid-mode-table .date-fieldtype .btn.add-time {
+  top: 8px;
+}
+.grid-mode-table .date-fieldtype .dr-input {
+  border: 0 !important;
+}
+.grid-mode-table .date-fieldtype .colon {
+  background: #fff;
+  margin: 0;
+  padding: 8px 5px;
+}/*# sourceMappingURL=datetime.min.css.map */

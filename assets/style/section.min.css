@@ -1,0 +1,25 @@
+/* ==========================================================================
+   SECTION FIELDTYPE
+   ========================================================================== */
+.section-fieldtype {
+  @apply border-t border-b bg-grey-20;
+  top: -1px;
+}
+.section-fieldtype.form-group {
+  position: relative;
+}
+.section-fieldtype.form-group:first-child {
+  @apply rounded-t border-t-0;
+}
+.section-fieldtype.form-group .field-inner > label {
+  @apply uppercase text-sm font-bold mt-1;
+}
+.section-fieldtype .help-block {
+  @apply .mb-0;
+}
+.section-fieldtype .help-block p {
+  margin: 0;
+}
+.section-fieldtype .read-only-overlay {
+  display: none;
+}/*# sourceMappingURL=section.min.css.map */

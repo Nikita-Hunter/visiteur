@@ -1,0 +1,15 @@
+/* ==========================================================================
+   CONFIGURE COMPONENT: A variation of the publish component
+   ========================================================================== */
+.configure-section .publish-fields .form-group:not(:last-child) {
+  @apply border-b;
+}
+.configure-section > .publish-fields > .toggle-fieldtype {
+  @apply flex justify-between items-center;
+}
+.configure-section > .publish-fields > .toggle-fieldtype .help-block, .configure-section > .publish-fields > .toggle-fieldtype .help-block p {
+  @apply mb-0;
+}
+.configure-section > .publish-fields > .toggle-fieldtype .field-inner {
+  @apply pr-4;
+}/*# sourceMappingURL=configure.min.css.map */

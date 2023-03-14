@@ -1,0 +1,54 @@
+/* ==========================================================================
+   FILTERS
+   ========================================================================== */
+.filter {
+  @apply bg-grey-20 mb-3 rounded-full text-center;
+  padding: 10px 8px 14px;
+}
+.filter a {
+  @apply text-xs text-grey-70 mx-sm p-1 relative;
+}
+.filter a.active, .filter a:hover {
+  @apply text-grey-100;
+}
+.filter a.active:after {
+  @apply bg-red block;
+  content: "";
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  opacity: 0.9;
+  position: absolute;
+  left: 50%;
+  margin-left: -1px;
+  bottom: 1px;
+}
+.filter a.no-dot:after {
+  display: none;
+}
+.filter a .icon {
+  position: relative;
+  top: 2px;
+}
+
+.filter-fields .form-group {
+  @apply p-0 pb-2;
+}
+.filter-fields .form-group:last-child {
+  @apply p-0;
+}
+.filter-fields .text-fieldtype .input-text {
+  @apply py-1 px-1.5;
+}
+.filter-fields .no-label.form-group,
+.filter-fields .no-label .form-group {
+  @apply pb-1;
+}
+.filter-fields .no-label.form-group:last-child,
+.filter-fields .no-label .form-group:last-child {
+  @apply p-0;
+}
+.filter-fields .no-label.form-group .field-inner,
+.filter-fields .no-label .form-group .field-inner {
+  @apply hidden;
+}/*# sourceMappingURL=filters.min.css.map */

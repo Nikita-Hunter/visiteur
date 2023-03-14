@@ -1,0 +1,20 @@
+.item {
+  @apply text-sm outline-none flex rounded border bg-white shadow-sm items-center;
+}
+.item .item-move {
+  @apply w-4 border-r rounded-l p-1;
+  cursor: grab;
+  background: theme("colors.grey-20") url("../svg/drag-dots.svg") center center no-repeat;
+}
+.item .item-move:hover {
+  @apply .bg-grey-30;
+}
+.item .item-inner {
+  @apply w-full flex items-center p-1;
+}
+.item.invalid .item-inner {
+  @apply border-red bg-red-lighter text-red;
+}
+.item.draggable-source--is-dragging {
+  opacity: 0.5;
+}/*# sourceMappingURL=items.min.css.map */

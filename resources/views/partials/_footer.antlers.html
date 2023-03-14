@@ -1,0 +1,27 @@
+<footer class="row" style="margin-left: 0; margin-right: 0;">
+    <section class="col-md-12 col-lg-12 col-sm-12 col-xs-12" style="padding-left: 0; padding-right: 0;">
+       <div class="col-md-12 col-sm-12 col-xs-12" style="padding-left: 0; padding-right: 0;">
+          <div class="col-md-12 col-sm-12 col-xs-12 cms-page" style="margin-bottom: 0; background-color: #03293a;">
+             <div style="padding-top: 10px;">
+                <div class="col-xs-12 col-sm-6">
+                    {{ nav:collection:pages }}
+                    <a href="{{ url }}">{{ title }}</a>
+                    {{ /nav:collection:pages }}
+                </div>
+                <div class="col-xs-6">
+                   <div class="media-contact">
+                      <p style="color: white; margin-bottom: 0;">Whatsapp: <a href="tel:+{{ information:phone }}">+{{ information:phone }}</a></p>
+                   </div>
+                </div>
+             </div>
+             <div class="col-xs-12">
+                <hr style="opacity: .1; margin-bottom: 10px; margin-top: 10px;">
+                <div class="row" style="display: flex; gap: 30px; justify-content: center;">
+                   <a href="mailto:{{ information:email }}" style="color: white;">{{ information:email }}</a>
+                   <p style="color:white;">2019</p>
+                </div>
+             </div>
+          </div>
+       </div>
+    </section>
+ </footer>

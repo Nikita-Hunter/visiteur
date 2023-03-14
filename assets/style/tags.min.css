@@ -1,0 +1,10 @@
+/* ==========================================================================
+   TAGS FIELDTYPE
+   ========================================================================== */
+.tags-fieldtype .vs__dropdown-menu {
+  display: none !important;
+}
+
+.tags-fieldtype .vs__open-indicator {
+  display: none !important;
+}/*# sourceMappingURL=tags.min.css.map */

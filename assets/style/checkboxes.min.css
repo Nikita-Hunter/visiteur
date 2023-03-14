@@ -1,0 +1,9 @@
+/* ==========================================================================
+   CHECKBOXES FIELDTYPE
+   ========================================================================== */
+.checkboxes-fieldtype .option {
+  @apply flex items-center mb-1;
+}
+.checkboxes-fieldtype .option + label {
+  @apply ml-1;
+}/*# sourceMappingURL=checkboxes.min.css.map */

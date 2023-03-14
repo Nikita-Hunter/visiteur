@@ -1,0 +1,6 @@
+/* ==========================================================================
+   ALERTS
+   ========================================================================== */
+.sweet-alert button {
+  @apply .text-base .rounded .bg-primary;
+}/*# sourceMappingURL=alerts.min.css.map */

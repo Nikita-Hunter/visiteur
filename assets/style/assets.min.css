@@ -1,0 +1,58 @@
+/* ==========================================================================
+   ASSETS FIELDTYPE
+   ========================================================================== */
+.assets-fieldtype .assets-fieldtype-drag-container {
+  position: relative;
+}
+
+.assets-fieldtype .assets-fieldtype-picker {
+  @apply flex items-center px-2 py-1 bg-grey-20 border rounded;
+}
+.assets-fieldtype .assets-fieldtype-picker.is-expanded {
+  @apply border-b-0 rounded-b-none;
+}
+.assets-fieldtype .assets-fieldtype-picker .asset-upload-control {
+  @apply ml-2;
+}
+.assets-fieldtype .assets-fieldtype-picker .upload-text-button {
+  @apply text-blue underline whitespace-no-wrap;
+}
+.assets-fieldtype .assets-fieldtype-picker .upload-text-button:hover {
+  @apply text-blue-dark;
+}
+
+/* Inside a Grid
+  ========================================================================== */
+.grid-fieldtype .assets-fieldtype-picker {
+  @apply border-none rounded-none bg-transparent p-0;
+}
+
+/* In a Grid fieldtype
+  ========================================================================== */
+.grid-fieldtype .grid-table .assets-fieldtype .asset-table-listing tbody tr td {
+  padding: 4px;
+}
+
+/* In a Bard fieldtype
+  ========================================================================== */
+.bard-set-solo .asset-tile {
+  max-width: none;
+  padding: 0;
+}
+
+.bard-set-solo .assets-fieldtype label {
+  display: none;
+}
+
+.assets-fieldtype .delete-bard-set {
+  display: none;
+}
+.bard-set-solo .assets-fieldtype .delete-bard-set {
+  display: block;
+}
+
+/* Responsive Wangjangling
+  ========================================================================== */
+.assets-fieldtype .narrow .assets-fieldtype-picker .drag-drop-text {
+  display: none;
+}/*# sourceMappingURL=assets.min.css.map */

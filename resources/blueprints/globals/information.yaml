@@ -1,0 +1,82 @@
+sections:
+  main:
+    display: Основное
+    fields:
+      -
+        handle: site_name
+        field:
+          placeholder: 'Введите название сайта'
+          input_type: text
+          antlers: false
+          display: 'Название сайта'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          validate:
+            - required
+      -
+        handle: phone
+        field:
+          placeholder: 'Введите номер телефона'
+          input_type: number
+          prepend: +
+          antlers: false
+          display: Моб.телефон
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          validate:
+            - required
+      -
+        handle: email
+        field:
+          placeholder: 'Введите адрес эл.почты'
+          input_type: email
+          antlers: false
+          display: E-mail
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          validate:
+            - required
+      -
+        handle: logo
+        field:
+          mode: list
+          container: assets
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          max_files: 1
+          display: 'Логотип сайта'
+          type: assets
+          icon: assets
+          instructions: 'Загрузите логотип сайта'
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          validate:
+            - required
+      -
+        handle: favicon
+        field:
+          mode: list
+          container: assets
+          restrict: false
+          allow_uploads: true
+          show_filename: true
+          max_files: 1
+          display: 'Иконка сайта'
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          validate:
+            - required

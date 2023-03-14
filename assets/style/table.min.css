@@ -1,0 +1,76 @@
+/* ==========================================================================
+   Table Fieldtype
+   ========================================================================== */
+.table-fieldtype-table {
+  @apply w-full text-left border text-grey relative mb-2 outline-none shadow-sm rounded;
+  border-collapse: separate;
+  border-spacing: 0;
+  table-layout: fixed;
+}
+
+.table-fieldtype-table thead th {
+  @apply font-medium border-r p-1 border-b z-10 bg-grey-20 text-grey-90 uppercase text-2xs tracking-wide;
+  display: table-cell;
+  position: sticky;
+  top: -1px;
+}
+.table-fieldtype-table thead th:first-child {
+  @apply .rounded-tl pl-1.5;
+}
+.table-fieldtype-table thead th:last-child {
+  @apply .rounded-tr border-r-0;
+}
+.table-fieldtype-table thead th.grid-drag-handle-header {
+  @apply w-3;
+}
+
+.table-fieldtype-table .input-text {
+  @apply bg-white border-none rounded-none shadow-none outline-none text-sm;
+}
+.table-fieldtype-table .input-text:focus {
+  @apply shadow-inner bg-grey-10;
+}
+
+.table-fieldtype-table tbody {
+  @apply outline-none;
+}
+.table-fieldtype-table tbody tr {
+  @apply outline-none;
+}
+.table-fieldtype-table tbody td {
+  @apply border-b border-r p-0;
+}
+.table-fieldtype-table tbody td:first-child.grid-cell {
+  @apply pl-1.5;
+}
+.table-fieldtype-table tbody td:last-child {
+  @apply border-r-0;
+}
+.table-fieldtype-table tbody td.table-drag-handle {
+  @apply w-3 border-r h-full p-1;
+  cursor: grab;
+  background: theme("colors.grey-20") url("../svg/drag-dots.svg") center center no-repeat;
+}
+.table-fieldtype-table tbody td.table-drag-handle:hover {
+  @apply .bg-grey-30;
+}
+.table-fieldtype-table tbody tr:last-child td {
+  @apply border-b-0;
+}
+.table-fieldtype-table tbody tr:last-child td:first-child {
+  @apply .rounded-bl;
+}
+.table-fieldtype-table tbody tr:last-child td:last-child {
+  @apply .rounded-br;
+}
+.table-fieldtype-table tbody tr.draggable-source--is-dragging td {
+  @apply bg-grey-10;
+}
+.table-fieldtype-table tbody .draggable-mirror {
+  @apply bg-white border-t border-b shadow;
+}
+
+.table-fieldtype-table .row-controls {
+  @apply w-8 pl-0 text-center;
+  vertical-align: center;
+}/*# sourceMappingURL=table.min.css.map */

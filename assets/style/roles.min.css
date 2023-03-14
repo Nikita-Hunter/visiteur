@@ -1,0 +1,12 @@
+/* ==========================================================================
+   ROLES
+   ========================================================================== */
+.roles li li {
+  margin-left: 30px;
+}
+.roles .disabled {
+  opacity: 0.5;
+}
+.roles .disabled .disabled {
+  opacity: 1;
+}/*# sourceMappingURL=roles.min.css.map */

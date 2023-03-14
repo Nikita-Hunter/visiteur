@@ -1,0 +1,195 @@
+/* ==========================================================================
+   MARKDOWN FIELDTYPE
+   ========================================================================== */
+.markdown-fieldtype-wrapper {
+  @apply border rounded overflow-hidden relative;
+}
+.markdown-fieldtype-wrapper:focus-within {
+  @apply focus-outline;
+}
+.markdown-fieldtype-wrapper .markdown-toolbar {
+  @apply .bg-white .shadow-none rounded-t .border-b .text-sm flex items-start justify-between;
+  padding: 4px 8px;
+}
+.markdown-fieldtype-wrapper .markdown-buttons {
+  @apply flex items-center;
+}
+.markdown-fieldtype-wrapper .markdown-buttons button {
+  @apply text-grey-80 rounded px-sm flex items-center justify-center text-base text-center;
+  height: 32px;
+  width: 32px;
+  margin: 0 2px;
+}
+.markdown-fieldtype-wrapper .markdown-buttons button:hover {
+  @apply bg-grey-20;
+}
+.markdown-fieldtype-wrapper .markdown-buttons button.active {
+  @apply bg-grey-30 text-black;
+}
+.markdown-fieldtype-wrapper .markdown-buttons button:focus {
+  @apply focus-outline;
+}
+.markdown-fieldtype-wrapper .markdown-buttons button:disabled {
+  @apply .opacity-50;
+}
+.markdown-fieldtype-wrapper .markdown-buttons button:disabled:hover {
+  @apply .text-grey-80;
+}
+.markdown-fieldtype-wrapper .markdown-modes {
+  @apply ml-1 flex items-center h-full;
+}
+.markdown-fieldtype-wrapper .markdown-modes button {
+  @apply mr-2 text-grey-50 outline-none h-full;
+  padding: 6px 4px;
+}
+.markdown-fieldtype-wrapper .markdown-modes button:hover {
+  @apply text-blue;
+}
+.markdown-fieldtype-wrapper .markdown-modes button.active {
+  @apply text-grey-80;
+}
+.markdown-fieldtype-wrapper .markdown-modes button:focus {
+  @apply focus-outline;
+}
+.markdown-fieldtype-wrapper .CodeMirror {
+  @apply bg-grey-10 shadow-inner h-auto font-mono leading-normal p-1.5 text-xs;
+  border-radius: 0 0 3px 3px;
+}
+.markdown-fieldtype-wrapper .CodeMirror .cm-comment {
+  @apply font-mono text-sm;
+}
+.markdown-fieldtype-wrapper .CodeMirror-code {
+  min-height: 100px;
+}
+.markdown-fieldtype-wrapper .helpers {
+  @apply border-t text-xs text-grey-80 flex items-center;
+}
+.markdown-fieldtype-wrapper .helpers button:hover {
+  @apply text-blue;
+}
+.markdown-fieldtype-wrapper .markdown-cheatsheet-helper {
+  @apply py-1 px-2 inline-block;
+}
+.markdown-fieldtype-wrapper .markdown-asset-helper {
+  @apply py-1 px-2 inline-block;
+}
+
+/* Dark Mode
+  ========================================================================== */
+.markdown-fieldtype-wrapper.markdown-fullscreen.markdown-dark-mode {
+  @apply bg-grey-80 border-none;
+}
+.markdown-fieldtype-wrapper.markdown-fullscreen.markdown-dark-mode .markdown-toolbar {
+  @apply text-white border-b border-grey-100 shadow-lg;
+  background: linear-gradient(180deg, theme("colors.grey-90"), hsl(210, 20%, 13%));
+}
+.markdown-fieldtype-wrapper.markdown-fullscreen.markdown-dark-mode .helpers {
+  @apply bg-grey-90 text-white border-t border-grey-100;
+}
+.markdown-fieldtype-wrapper.markdown-fullscreen.markdown-dark-mode .markdown-buttons button {
+  @apply text-grey-40;
+}
+.markdown-fieldtype-wrapper.markdown-fullscreen.markdown-dark-mode .markdown-buttons button:hover {
+  @apply bg-grey-100 text-white;
+}
+.markdown-fieldtype-wrapper.markdown-fullscreen.markdown-dark-mode .markdown-modes button {
+  @apply text-grey-70;
+}
+.markdown-fieldtype-wrapper.markdown-fullscreen.markdown-dark-mode .markdown-modes button.active {
+  @apply text-white;
+}
+.markdown-fieldtype-wrapper.markdown-fullscreen.markdown-dark-mode .CodeMirror {
+  @apply text-white antialiased;
+}
+.markdown-fieldtype-wrapper.markdown-fullscreen.markdown-dark-mode [class*=cm-] {
+  color: white !important;
+}
+.markdown-fieldtype-wrapper.markdown-fullscreen.markdown-dark-mode .CodeMirror-cursor {
+  border-left: 2px solid white;
+}
+.markdown-fieldtype-wrapper.markdown-fullscreen.markdown-dark-mode .markdown-preview {
+  @apply text-white;
+}
+
+/* Read Only
+  ========================================================================== */
+.markdown-fieldtype.read-only-field .CodeMirror {
+  @apply bg-grey-30 text-grey-70;
+}
+
+/* Inside a Grid fieldtype
+  ========================================================================== */
+.grid-fieldtype .grid-table .markdown-fieldtype .markdown-fieldtype-wrapper {
+  @apply border rounded;
+}
+.grid-fieldtype .grid-table .markdown-fieldtype .markdown-preview {
+  @apply border-none p-1 text-left;
+}
+.grid-fieldtype .grid-table .markdown-fieldtype .markdown-preview p {
+  line-height: 1.2;
+}
+
+/* Writing Mode Typography
+  ========================================================================== */
+.markdown-fieldtype .cm-header {
+  @apply text-grey-80;
+}
+.markdown-fieldtype .cm-header.cm-header-1 {
+  @apply text-lg;
+}
+.markdown-fieldtype .cm-header.cm-header-2 {
+  @apply text-base;
+}
+.markdown-fieldtype .cm-header.cm-header-3 {
+  @apply text-sm;
+}
+
+.markdown-fieldtype .cm-quote {
+  @apply text-grey-80 italic text-sm;
+}
+
+/* Preview Mode Typography
+  ========================================================================== */
+.markdown-preview {
+  @apply mx-auto;
+  padding: 16px 20px;
+  min-height: 167px;
+}
+.markdown-preview ol {
+  @apply list-decimal;
+}
+.markdown-preview ul {
+  @apply list-disc;
+}
+
+.markdown-fieldtype-wrapper.markdown-fullscreen {
+  @apply fixed bg-white inset-0 h-screen rounded-none;
+  padding-top: 52px;
+  z-index: 998;
+  will-change: transform;
+}
+.markdown-fieldtype-wrapper.markdown-fullscreen .markdown-toolbar {
+  @apply fixed top-0 w-full px-3 py-1 h-13 shadow text-base flex items-center justify-between;
+  background: linear-gradient(180deg, #fff, #f9fafb);
+  border-bottom: 1px solid #c4cdd6;
+}
+.markdown-fieldtype-wrapper.markdown-fullscreen .mode-wrap {
+  height: calc(100vh - 88px);
+  overflow-y: scroll;
+  cursor: text;
+}
+.markdown-fieldtype-wrapper.markdown-fullscreen .mode-wrap.mode-preview {
+  height: calc(100vh - 52px);
+}
+.markdown-fieldtype-wrapper.markdown-fullscreen .CodeMirror {
+  @apply max-w-xl bg-transparent mx-auto relative p-4 shadow-none text-base;
+}
+.markdown-fieldtype-wrapper.markdown-fullscreen .CodeMirror .CodeMirror-scroll {
+  @apply m-0;
+}
+.markdown-fieldtype-wrapper.markdown-fullscreen .markdown-preview {
+  @apply max-w-xl bg-transparent mx-auto relative p-4 text-lg;
+}
+.markdown-fieldtype-wrapper.markdown-fullscreen .helpers {
+  @apply absolute bottom-0 inset-x-0 bg-white;
+}/*# sourceMappingURL=markdown.min.css.map */

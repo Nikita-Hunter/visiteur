@@ -1,0 +1,49 @@
+/* ==========================================================================
+   STACKS ON STACKS ON STACKS
+   ========================================================================== */
+.stacks-on-stacks {
+  @apply fixed inset-0;
+  z-index: 10000;
+}
+.stacks-on-stacks > .vue-portal-target {
+  @apply absolute inset-0;
+}
+.stacks-on-stacks .stack-container {
+  @apply absolute inset-0;
+  transition: left 0.3s ease;
+}
+.stacks-on-stacks .stack-overlay {
+  @apply bg-black absolute inset-0;
+  z-index: 99;
+  opacity: 0.2;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.stacks-on-stacks .stack-overlay.stack-overlay-fade-enter, .stacks-on-stacks .stack-overlay.stack-overlay-fade-leave-to {
+  opacity: 0;
+}
+.stacks-on-stacks .stack-hit-area {
+  @apply absolute inset-0 cursor-pointer;
+  z-index: 100;
+}
+.stacks-on-stacks .stack-content {
+  @apply h-full relative shadow-lg;
+  z-index: 101;
+  transition: all 0.2s ease;
+}
+.stacks-on-stacks .stack-content.stack-slide-enter, .stacks-on-stacks .stack-content.stack-slide-leave-to {
+  transform: translateX(10px);
+  opacity: 0;
+}
+.stacks-on-stacks .hovering .stack-content {
+  transform: translateX(-16px);
+}
+.stacks-on-stacks .breadcrumb svg {
+  display: none !important;
+}
+
+@media all and (max-width: 980px) {
+  .stacks-on-stacks .stack-container {
+    left: 0 !important;
+  }
+}/*# sourceMappingURL=stacks.min.css.map */

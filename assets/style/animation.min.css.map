@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../../vendor/statamic/cms/resources/sass/core/animation.scss"],"names":[],"mappings":"AAAA;AAAA;AAEA;EACI;;;AAGJ;EACI;IAAO;;EACP;IAAK;;;AAIT;AAAA;AAEA;EACI;;;AAGJ;EACI;IAAO;;EACP;IAAK;;;AAIT;AAAA;AAEA;EAAkB;;;AAElB;EACI;IAAK;;EACL;IAAO;;;AAIX;AAAA;AAEA;EACI;EACA;EACA;;;AAGJ;EACI;IAAW;;EACX;IAA0B;;EAC1B;IAAqB","file":"animation.min.css"}

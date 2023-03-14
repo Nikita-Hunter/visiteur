@@ -1,0 +1,131 @@
+sections:
+  main:
+    display: Основное
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: content
+        field:
+          collapse: false
+          always_show_set_button: false
+          previews: true
+          smart_typography: false
+          buttons:
+            - h2
+            - h3
+            - bold
+            - italic
+            - unorderedlist
+            - orderedlist
+            - removeformat
+            - quote
+            - anchor
+            - image
+            - table
+            - h1
+            - h4
+            - h5
+            - h6
+            - underline
+            - strikethrough
+            - small
+            - superscript
+            - subscript
+            - code
+            - codeblock
+            - horizontalrule
+            - alignleft
+            - aligncenter
+            - alignright
+            - alignjustify
+          save_html: false
+          inline: false
+          toolbar_mode: fixed
+          link_noopener: false
+          link_noreferrer: false
+          target_blank: true
+          reading_time: false
+          fullscreen: true
+          allow_source: true
+          enable_input_rules: true
+          enable_paste_rules: true
+          antlers: false
+          remove_empty_nodes: false
+          display: 'Контент страницы'
+          type: bard
+          icon: bard
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          duplicate: false
+      -
+        handle: template
+        field:
+          hide_partials: true
+          blueprint: false
+          display: Шаблон
+          type: template
+          icon: template
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          localizable: true
+      -
+        handle: parent
+        field:
+          type: entries
+          collections:
+            - pages
+          max_items: 1
+          listable: false
+          localizable: true
+  meta_tags:
+    display: Мета-теги
+    fields:
+      -
+        handle: meta_title
+        field:
+          input_type: text
+          antlers: false
+          display: Заголовок
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: meta_description
+        field:
+          character_limit: '160'
+          antlers: false
+          display: Описание
+          type: textarea
+          icon: textarea
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+      -
+        handle: meta_keywords
+        field:
+          input_type: text
+          antlers: false
+          display: 'Ключевые слова'
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+title: Страницы

@@ -1,0 +1,20 @@
+/* ==========================================================================
+   PARTIAL FIELDTYPE
+   ========================================================================== */
+.partial-fieldtype.form-group {
+  padding: 0;
+  margin: 0;
+}
+.partial-fieldtype > .field-inner {
+  padding: 0;
+}
+.partial-fieldtype > .field-inner > label, .partial-fieldtype > .field-inner > .help-block {
+  display: none;
+}
+
+.editing-layout .partial-fieldtype.form-group {
+  padding: 15px;
+}
+.editing-layout .partial-fieldtype.form-group > .field-inner > .publish-fields > .form-group {
+  padding: 0;
+}/*# sourceMappingURL=partial.min.css.map */

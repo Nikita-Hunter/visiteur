@@ -1,0 +1,23 @@
+<main class="row">
+    <section class="col-md-12 col-lg-12 col-sm-12 col-xs-12 media-row" style="padding: 0 30px;">
+       <div class="col-md-12 col-sm-12 col-xs-12" style="padding-top: 65px;">
+          <div id="yw0" class="list-view">
+             <div class="items">
+                {{ collection:stati }}
+                <div role="article" class="row" style="margin-bottom: 20px; background-color: white;border-color: #ccc;border-style: solid;border-width: 1px;">
+                   <div class="col-md-12 col-sm-12 col-xs-12">
+                      <h4><a href="{{ url }}">{{ title }}</a></h4>
+                   </div>
+                   <div class="col-md-12 col-sm-12 col-xs-12">
+                      {{ kratkoe_opisanie }}...<a href="{{ url }}">читать дальше</a>    
+                   </div>
+                   <div class="col-md-12 col-sm-12 col-xs-12">
+                      <p>Размещено {{ date | format('d.m.Y') }}</p>
+                   </div>
+                </div> 
+                {{ /collection:stati }}
+             </div>
+          </div>
+       </div>
+    </section>
+ </main>

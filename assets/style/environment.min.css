@@ -1,0 +1,14 @@
+/* ==========================================================================
+   ENVIRONMENT FIELDTYPE
+   ========================================================================== */
+.environment-field {
+  cursor: not-allowed;
+}
+.environment-field .icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.environment-field .icon:before {
+  top: 1px;
+}/*# sourceMappingURL=environment.min.css.map */

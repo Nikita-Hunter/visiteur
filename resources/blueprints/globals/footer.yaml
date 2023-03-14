@@ -1,0 +1,33 @@
+sections:
+  main:
+    display: Основное
+    fields:
+      -
+        handle: email
+        field:
+          placeholder: 'Введите адрес эл.почты'
+          input_type: email
+          antlers: false
+          display: E-mail
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          validate:
+            - required
+      -
+        handle: phone
+        field:
+          placeholder: 'Введите номер моб.телефона'
+          input_type: tel
+          prepend: +
+          antlers: false
+          display: Моб.телефон
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          validate:
+            - required

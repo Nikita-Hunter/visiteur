@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="{{ site:short_locale }}">
+   <head>
+      <meta charset='utf-8'>
+      <link rel="icon" href="{{ information:favicon }}" type="image/x-icon">
+      <link rel="shortcut icon" href="{{ information:favicon }}" type="image/x-icon">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+      <meta name="description" content="{{ meta_description }}">
+      <meta name="keywords" content="{{ meta_keywords }}">
+      <link rel="stylesheet" href="{{ mix src='css/bootstrap.css' }}">
+      <link rel="stylesheet" href="{{ mix src='css/style.css' }}">
+      <script type="text/javascript" src="{{ mix src='/js/site.js' }}"></script>
+      <title>{{ information:site_name }} - {{ title ?? site:name }}</title>
+   </head>
+   <body class="application" id="application">
+      <div class="application-wrapper" id="application-wrapper" style="padding-bottom: 30px;">
+        <div class="container">
+         {{ partial:partials.nav }}
+        {{ template_content }}
+         </div>
+      </div>
+      {{ partial:partials.footer }}
+   </body>
+</html>

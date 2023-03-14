@@ -1,0 +1,76 @@
+/* ==========================================================================
+   THE MAIN NAV
+   ========================================================================== */
+.nav-main {
+  @apply hidden select-none bg-white shadow h-screen absolute left-0 overflow-scroll w-56;
+  transition: all 0.3s;
+  z-index: 9998;
+}
+.nav-main h6 {
+  @apply mt-3;
+}
+.nav-main ul {
+  @apply list-none p-0 mt-0;
+}
+.nav-main li {
+  @apply p-0 text-sm;
+  margin-top: 6px;
+}
+.nav-main li a {
+  @apply p-0 flex items-center text-grey-80;
+  transition: all 0.08s ease-in-out;
+}
+.nav-main li a:hover {
+  @apply text-blue;
+}
+.nav-main li a i {
+  @apply block h-7 p-sm w-7 mr-1 rounded-full;
+}
+.nav-main li.current > a {
+  @apply text-grey-90 font-medium;
+}
+.nav-main li.current > a i {
+  @apply bg-white;
+}
+.nav-main li ul {
+  @apply mb-1;
+  margin-left: 1.5rem;
+}
+.nav-main li ul li {
+  @apply text-xs;
+  margin-left: 12px;
+}
+.nav-main li ul li a {
+  @apply text-grey;
+}
+.nav-closed .nav-main {
+  left: -110%;
+}
+.nav-main .nav-section-top-level {
+  @apply mt-2;
+}
+
+@screen md {
+  .nav-main {
+    @apply fixed flex bg-transparent shadow-none overflow-auto border-r;
+    z-index: 1;
+    height: calc(100% - 52px);
+  }
+  .showing-license-banner .nav-main {
+    height: calc(100% - 120px);
+  }
+}
+.nav-main-inner {
+  @apply pl-3 pr-2 pt-1;
+}
+
+.nav-toggle {
+  @apply block h-6 p-sm w-6 mr-1.5 rounded;
+  outline: none !important;
+}
+.nav-toggle:hover {
+  @apply .bg-grey-20;
+}
+
+/* Responsive Wangjangling
+  ========================================================================== *//*# sourceMappingURL=nav-main.min.css.map */

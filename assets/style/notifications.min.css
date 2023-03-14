@@ -1,0 +1,36 @@
+.toasted-container.bottom-right {
+  bottom: 32px !important;
+  right: 32px !important;
+}
+
+.toasted-container.bottom-left {
+  bottom: 32px !important;
+  left: 32px !important;
+}
+
+.toasted-container {
+  @apply items-start;
+}
+
+.toasted-container .toasted.statamic {
+  @apply bg-white text-grey-80 mt-2 text-base rounded shadow p-0;
+  height: 48px;
+}
+.toasted-container .toasted.statamic i {
+  @apply flex items-center rounded-l mr-2 h-full px-2 text-white;
+}
+.toasted-container .toasted.statamic.success i {
+  @apply bg-green-light;
+}
+.toasted-container .toasted.statamic.error i {
+  @apply bg-red;
+}
+.toasted-container .toasted.statamic.default i {
+  @apply bg-grey-80;
+}
+.toasted-container .toasted.statamic .action {
+  @apply font-normal text-xl px-2 h-full text-grey-60 m-0 ml-1 flex items-center;
+}
+.toasted-container .toasted.statamic .action:hover {
+  @apply no-underline text-grey-90;
+}/*# sourceMappingURL=notifications.min.css.map */

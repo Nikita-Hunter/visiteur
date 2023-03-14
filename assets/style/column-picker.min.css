@@ -1,0 +1,21 @@
+.column-picker-item {
+  @apply bg-white text-sm outline-none flex items-center rounded select-none;
+  padding: 4px 8px;
+  margin: -1px 0;
+}
+.column-picker-item.sortable {
+  cursor: grab;
+}
+.column-picker-item.sortable label {
+  cursor: grab;
+}
+.column-picker-item.sortable:hover {
+  @apply bg-grey-20;
+}
+.column-picker-item.sortable.draggable-mirror, .column-picker-item.sortable.draggable-source--is-dragging {
+  cursor: grabbing;
+}
+
+.draggable--is-dragging {
+  cursor: grabbing;
+}/*# sourceMappingURL=column-picker.min.css.map */

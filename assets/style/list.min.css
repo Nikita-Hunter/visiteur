@@ -1,0 +1,99 @@
+/* ==========================================================================
+   LIST FIELDTYPE
+   ========================================================================== */
+.list-fieldtype ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.list-fieldtype li {
+  padding: 0 16px;
+  background: url("../svg/bullet.svg") no-repeat 0px 8px;
+  margin-bottom: 8px;
+  font-size: 16px;
+  position: relative;
+  font-size: 14px;
+}
+.list-fieldtype li:active {
+  cursor: ns-resize;
+}
+.list-fieldtype li.editing {
+  padding-left: 0px;
+  background: #fff;
+}
+.list-fieldtype li:last-child {
+  padding-left: 0;
+  margin-bottom: 0;
+  background: none;
+}
+.list-fieldtype li input {
+  background: #fff url("../svg/bullet.svg") no-repeat 0 8px;
+  box-shadow: none;
+  padding: 0 16px;
+  height: auto !important;
+  font-size: 14px;
+  outline: 0px !important;
+}
+.list-fieldtype li input:active, .list-fieldtype li input:focus {
+  outline: 0px !important;
+  -webkit-appearance: none;
+  box-shadow: 0 0 0 0;
+}
+.list-fieldtype li .delete {
+  background: #fff url(../svg/delete-x.svg) no-repeat 0 0;
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  opacity: 0;
+  top: 6px;
+  left: -1px;
+  position: absolute;
+  cursor: pointer;
+}
+.list-fieldtype li:hover .delete {
+  opacity: 1;
+}
+
+/* Inside a Grid
+  ========================================================================== */
+.grid-fieldtype .list-fieldtype {
+  padding: 8px 0 10px;
+}
+.grid-fieldtype .list-fieldtype ul {
+  border: none;
+  padding: 0;
+  border-radius: 0;
+}
+.grid-fieldtype .list-fieldtype li {
+  background-position: 10px 8px;
+  font-size: 14px;
+  margin: 0 0 8px;
+  padding-left: 20px;
+}
+.grid-fieldtype .list-fieldtype li:last-child {
+  padding-left: 0;
+}
+.grid-fieldtype .list-fieldtype li input {
+  background-position: 10px 8px;
+  padding: 0 10px 0 20px;
+  margin-top: 0;
+}
+.grid-fieldtype .list-fieldtype li input:hover {
+  background-color: #fff;
+}
+.grid-fieldtype .list-fieldtype li .delete {
+  left: 8px;
+}
+.grid-fieldtype .list-fieldtype .ui-sortable-helper {
+  box-shadow: none;
+}
+.grid-fieldtype .list-fieldtype .ui-sortable-helper .delete {
+  display: none;
+}
+
+/* Inside a Bard
+  ========================================================================== */
+.bard-fieldtype .list-fieldtype input.input-text {
+  border: none;
+}/*# sourceMappingURL=list.min.css.map */

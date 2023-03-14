@@ -1,0 +1,18 @@
+<header role="menu" class="header media-header">
+    <div class="row">
+       <nav class="menu navbar navbar-default" role="navigation">
+          <div class="navbar-header"><button class="navbar-toggle" data-toggle="collapse" data-target="#yw1" type="button"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+             <a style="padding: 3px;" class="navbar-brand" href="/">
+                  <img width="117" height="32" src="{{ information:logo }}" alt="" />
+            </a>
+          </div>
+          <div class="collapsemenu collapse navbar-collapse" id="yw1">
+             <ul id="yw0" class="nav navbar-nav" role="menu">
+                {{ nav:collection:pages }}
+                    <li><a tabindex="-1" href="{{ url }}">{{ title }}</a></li>
+                {{ /nav:collection:pages }}
+             </ul>
+          </div>
+       </nav>
+    </div>
+ </header>
